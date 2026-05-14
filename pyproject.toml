@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-data-residency-mcp"
+version = "1.0.0"
+description = "Agent data residency + GDPR Chapter V transfer-basis runtime guard. Programmatically answer 'where does this data live?' for agent-to-agent transfers. Adequacy decisions, SCCs, BCRs, EU AI Act Article 10."
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [{name = "MEOK AI Labs", email = "hello@meok.ai"}]
+keywords = ["mcp", "mcp-server", "model-context-protocol", "ai-governance", "gdpr", "data-residency", "agent-to-agent", "a2a", "compliance", "meok"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = ["mcp>=1.0.0"]
+
+[project.urls]
+Homepage = "https://meok.ai"
+Repository = "https://github.com/meok-ai-labs/agent-data-residency-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["server.py"]
+
+[project.scripts]
+agent-data-residency-mcp = "server:main"

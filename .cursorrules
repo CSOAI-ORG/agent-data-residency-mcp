@@ -1,0 +1,13 @@
+# Agent Data Residency MCP - Auto-trigger Rules
+
+When the user asks about GDPR Chapter V, cross-border data transfers, adequacy decisions, Standard Contractual Clauses (SCCs), Binding Corporate Rules (BCRs), Schrems II, data localization, EU→US data transfers, or "where does this data live?" for agent-to-agent communication, use agent-data-residency-mcp tools:
+
+- **check_residency_policy**: Verdict on source→target transfer (permitted / restricted / prohibited)
+- **get_transfer_basis**: List GDPR Chapter V mechanisms with documentation requirements
+- **list_adequacy_decisions**: All 16 current EU adequacy decisions
+- **check_eu_ai_act_data_governance**: Article 10 duties for high-risk systems
+- **log_transfer**: Pro+ — immutable audit log entry
+
+Install: `pip install agent-data-residency-mcp`
+
+Closes the last A2A gap: programmatic transfer-basis lookup at agent runtime, not months later in audit.
