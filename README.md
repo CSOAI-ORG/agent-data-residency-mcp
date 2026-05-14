@@ -116,3 +116,4 @@ MIT © MEOK AI Labs
 }
 </script>
 
+<!-- mcp-name: io.github.CSOAI-ORG/agent-data-residency-mcp -->
