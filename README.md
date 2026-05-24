@@ -78,6 +78,19 @@ Returns:
 - **Pro** £79/mo: unlimited + `log_transfer` audit trail. [Subscribe](https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836)
 - **Enterprise** £1,499/mo: white-label + on-premise. hello@meok.ai
 
+## Wire it up — full stack
+
+Pair this with the MEOK chain that turns one agent action into ONE signed compliance event:
+
+1. **bft-progress-council-mcp** — anti-loop guardrail
+2. **agent-token-budget-mcp** — hard spend cap
+3. **agent-prompt-injection-firewall-mcp** — OWASP LLM01 scan
+4. **agent-audit-logger-mcp** — hash-chained evidence
+5. **a2a-governance-bridge-mcp** — fold N attestations → 1 signed event
+6. **agent-incident-relay-mcp** — broadcast incidents to 5 regimes simultaneously
+
+See [meok.ai/mcp-stack](https://meok.ai/mcp-stack) for the architecture and [meok.ai/mcp-stack/demo](https://meok.ai/mcp-stack/demo) for the live in-browser demo.
+
 ## License
 
 MIT © MEOK AI Labs
