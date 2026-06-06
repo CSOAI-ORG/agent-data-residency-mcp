@@ -33,7 +33,6 @@ import os as _os
 _MEOK_API_KEY = _os.environ.get("MEOK_API_KEY", "")
 
 try:
-    sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
     from auth_middleware import check_access as _shared_check_access
     _AUTH_ENGINE_AVAILABLE = True
 except ImportError:
@@ -45,7 +44,7 @@ except ImportError:
             return True, "OK", "pro"
         if _MEOK_API_KEY and api_key and api_key != _MEOK_API_KEY:
             return False, "Invalid API key. Get one at https://meok.ai/api-keys", "free"
-        return True, "OK", "free"
+        return True, "OK, Pro at https://www.csoai.org/checkout", "free"
 
 
 def check_access(api_key: str = ""):
@@ -55,7 +54,7 @@ def check_access(api_key: str = ""):
 
 FREE_DAILY_LIMIT = 10
 _usage: dict[str, list[datetime]] = defaultdict(list)
-STRIPE_PRO = "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"
+STRIPE_PRO = "https://buy.stripe.com/14AfZjfsM6oq7oh2Yg8k90P"
 
 
 def _rl(tier="free") -> Optional[str]:

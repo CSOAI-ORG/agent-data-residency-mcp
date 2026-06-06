@@ -43,7 +43,7 @@
     "api_key": {
       "type": "string",
       "title": "MEOK API Key (Optional)",
-      "description": "Optional. Free tier works without a key (10 calls/day). Pro tier: https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836",
+      "description": "Optional. Free tier works without a key (10 calls/day). Pro tier: https://buy.stripe.com/14AfZjfsM6oq7oh2Yg8k90P",
       "default": "",
       "sensitive": true,
       "required": false

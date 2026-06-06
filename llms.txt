@@ -1,34 +1,23 @@
-# Agent Data Residency MCP
+# agent-data-residency-mcp
 
-> GDPR Chapter V runtime guard for cross-region agent transfers
+> Agent data residency + GDPR Chapter V transfer-basis runtime guard. Programmatically answer 'where does this data live?' for agent-to-agent transfers. Adequacy decisions, SCCs, BCRs, EU AI Act Article 10.
 
-`agent-data-residency-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- check_residency_policy
+- get_transfer_basis
+- list_adequacy_decisions
+- check_eu_ai_act_data_governance
+- log_transfer
+- search_regulation
+- list_regulations_in_db
 
 ## Install
-
-```bash
+```
 pip install agent-data-residency-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx agent-data-residency-mcp
-```
-
-## Tools
-
-- `check_residency_policy` — Check if a cross-border data transfer between agents is permitted.
-- `get_transfer_basis` — List GDPR Chapter V transfer mechanisms.
-- `list_adequacy_decisions` — Return all current EU adequacy decisions with status, date, and scope.
-- `check_eu_ai_act_data_governance` — Check EU AI Act Article 10 data-governance duties for an AI system.
-- `log_transfer` — Log a cross-border data transfer for audit trail (Pro+).
-- `search_regulation` — Full-text search across 410+ articles of real EU regulation text (EUR-Lex verified).
-- `list_regulations_in_db` — List all regulations in the local EUR-Lex FTS5 database.
-
 ## Links
-
-- Source: https://github.com/CSOAI-ORG/agent-data-residency-mcp
 - PyPI: https://pypi.org/project/agent-data-residency-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+- Docs: https://meok.ai

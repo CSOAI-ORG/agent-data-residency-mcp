@@ -1,0 +1,34 @@
+{
+  "name": "agent-data-residency-mcp",
+  "title": "Agent Data Residency Mcp",
+  "description": "Agent data residency + GDPR Chapter V transfer-basis runtime guard. Programmatically answer 'where does this data live?' for agent-to-agent transfers. Adequacy decisions, SCCs, BCRs, EU AI Act Article 10.",
+  "version": "1.0.3",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "check_residency_policy"
+    },
+    {
+      "name": "get_transfer_basis"
+    },
+    {
+      "name": "list_adequacy_decisions"
+    },
+    {
+      "name": "check_eu_ai_act_data_governance"
+    },
+    {
+      "name": "log_transfer"
+    },
+    {
+      "name": "search_regulation"
+    },
+    {
+      "name": "list_regulations_in_db"
+    }
+  ]
+}

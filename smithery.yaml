@@ -1,0 +1,33 @@
+name: agent-data-residency-mcp
+description: 'MCP server: agent-data-residency-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/agent-data-residency-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: check_residency_policy
+  description: Check if a cross-border data transfer between agents is permitted.
+- name: get_transfer_basis
+  description: List GDPR Chapter V transfer mechanisms.
+- name: list_adequacy_decisions
+  description: Return all current EU adequacy decisions with status, date, and scope.
+- name: check_eu_ai_act_data_governance
+  description: Check EU AI Act Article 10 data-governance duties for an AI system.
+- name: log_transfer
+  description: Log a cross-border data transfer for audit trail (Pro+).
+- name: search_regulation
+  description: Full-text search across 410+ articles of real EU regulation text (EUR-Lex
+    verified).
+- name: list_regulations_in_db
+  description: List all regulations in the local EUR-Lex FTS5 database.
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'
