@@ -1,0 +1,25 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "agent-data-residency-mcp",
+    "description": "Agent data residency + GDPR Chapter V transfer-basis runtime guard. Programmatically answer 'whe...",
+    "version": "1.0.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "agent-data-residency-mcp"
+      }
+    ],
+    "capabilities": [
+      "check_residency_policy",
+      "get_transfer_basis",
+      "list_adequacy_decisions",
+      "check_eu_ai_act_data_governance",
+      "log_transfer",
+      "search_regulation",
+      "list_regulations_in_db"
+    ]
+  }
+}
