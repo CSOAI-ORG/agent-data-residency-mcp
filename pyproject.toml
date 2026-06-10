@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "agent-data-residency-mcp"
 readme = "README.md"
-version = "1.0.3"
+version = "1.0.6"
 description = "Agent data residency + GDPR Chapter V transfer-basis runtime guard. Programmatically answer 'where does this data live?' for agent-to-agent transfers. Adequacy decisions, SCCs, BCRs, EU AI Act Article 10."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
