@@ -5,7 +5,8 @@
   "description": "Agent data residency + GDPR Chapter V transfer-basis runtime guard. Programmatically answer 'whe...",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/agent-data-residency-mcp",
-    "source": "github"
+    "source": "github",
+    "id": "1238467839"
   },
   "packages": [
     {
