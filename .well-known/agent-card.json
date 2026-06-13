@@ -1,0 +1,151 @@
+{
+  "name": "Agent Data Residency Mcp",
+  "version": "1.0.3",
+  "url": "https://mcp.meok.ai/agent-data-residency-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "Agent data residency + GDPR Chapter V transfer-basis runtime guard. Programmatically answer 'where does this data live?' for agent-to-agent transfers. Adequacy decisions, SCCs, BCRs, EU AI Act Article 10.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "check_residency_policy",
+      "name": "Check Residency Policy",
+      "description": "Check Residency Policy — a tool of the agent-data-residency-mcp MCP.",
+      "tags": [
+        "gdpr",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "get_transfer_basis",
+      "name": "Get Transfer Basis",
+      "description": "Get Transfer Basis — a tool of the agent-data-residency-mcp MCP.",
+      "tags": [
+        "gdpr",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_adequacy_decisions",
+      "name": "List Adequacy Decisions",
+      "description": "List Adequacy Decisions — a tool of the agent-data-residency-mcp MCP.",
+      "tags": [
+        "gdpr",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_eu_ai_act_data_governance",
+      "name": "Check Eu Ai Act Data Governance",
+      "description": "Check Eu Ai Act Data Governance — a tool of the agent-data-residency-mcp MCP.",
+      "tags": [
+        "gdpr",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "log_transfer",
+      "name": "Log Transfer",
+      "description": "Log Transfer — a tool of the agent-data-residency-mcp MCP.",
+      "tags": [
+        "gdpr",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "search_regulation",
+      "name": "Search Regulation",
+      "description": "Search Regulation — a tool of the agent-data-residency-mcp MCP.",
+      "tags": [
+        "gdpr",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_regulations_in_db",
+      "name": "List Regulations In Db",
+      "description": "List Regulations In Db — a tool of the agent-data-residency-mcp MCP.",
+      "tags": [
+        "gdpr",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "agent-data-residency-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
