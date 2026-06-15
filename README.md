@@ -165,3 +165,8 @@ Once configured, ask your assistant, for example:
 - "Use `check_residency_policy` to …"
 - "Use `get_transfer_basis` to …"
 - "Use `list_adequacy_decisions` to …"
+
+## See also
+
+MEOK compliance MCP fleet:
+[`qr-code-ai-mcp`](https://github.com/CSOAI-ORG/qr-code-ai-mcp)
