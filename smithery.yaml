@@ -3,7 +3,7 @@ description: 'MCP server: agent-data-residency-mcp'
 version: 1.0.5
 author: MEOK AI Labs
 homepage: https://safetyof.ai
-repository: https://github.com/MEOK-AI-Labs/agent-data-residency-mcp
+repository: https://github.com/CSOAI-ORG/agent-data-residency-mcp
 license: MIT
 categories:
 - compliance
